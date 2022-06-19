@@ -1,0 +1,36 @@
+
+.site-nav__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__item {
+  color: $color-thin-black;
+} 
+.site-nav__item:hover {
+  color: #666666;
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+.site-nav__item-link {
+  font-size: 15px;
+  line-height: 28px;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  font-weight: 400;
+  transition: 0.4s;
+  &:hover {
+    color: #000;
+  }
+}
+
+.site-nav__item-link:hover {
+  text-decoration: underline;
+  color: #666666;
+}
